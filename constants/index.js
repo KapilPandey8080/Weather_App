@@ -13,6 +13,7 @@ export const weatherImages = {
 'Cloudy': require('../assets/images/cloud.png'),
 'Mist': require('../assets/images/mist.png'),
 'Light rain': require('../assets/images/moderaterain.png'),
+'Light rain shower': require('../assets/images/moderaterain.png'),
 'Patchy rain nearby': require('../assets/images/moderaterain.png'),
 'Light drizzle': require('../assets/images/moderaterain.png'),
 'Patchy light drizzle': require('../assets/images/moderaterain.png'),

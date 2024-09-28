@@ -25,7 +25,7 @@ export default function HomeScreen() {
         setLoading(true);
         fetchWeatherForecast({
             cityName: loc.name,
-            days: '7'
+            days: '3'
         }).then(data => {
             setWeather(data);
             setLoading(false);
@@ -55,7 +55,7 @@ export default function HomeScreen() {
         if (myCity) cityName = myCity;
         fetchWeatherForecast({
             cityName,
-            days: '7'
+            days: '3'
         }).then(data => {
             setWeather(data);
             setLoading(false);
@@ -94,7 +94,7 @@ export default function HomeScreen() {
                                 <View style={{ height: '7%' }} className='mx-4 relative z-50'>
                                     <View className='flex-row justify-end items-center rounded-full top-8'
                                         style={{ backgroundColor: showSearch ? theme.bgWhite(0.2) : "transparent" }}
-                                        >
+                                    >
                                         {
                                             showSearch ? (
                                                 <TextInput
@@ -216,7 +216,7 @@ export default function HomeScreen() {
                                                 return (
                                                     <View
                                                         key={index}
-                                                        className='flex justify-center items-center w-24 rounded-3xl py-3 space-y-1 mr-4'
+                                                        className='flex justify-center items-center w-28 rounded-3xl py-3 space-y-1 mr-4'
                                                         style={{ backgroundColor: theme.bgWhite(0.15) }}
                                                     >
                                                         <Image
